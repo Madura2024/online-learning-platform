@@ -1,0 +1,151 @@
+.lesson-viewer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.lesson-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.btn-back {
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.lesson-content-layout {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 2rem;
+}
+
+.lesson-body {
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.no-video {
+    height: 300px;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 2rem;
+}
+
+.lesson-description-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary);
+}
+
+.lesson-description-header h3 {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.youtube-fallback-link {
+    background: #ff0000;
+    color: white !important;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.youtube-fallback-link:hover {
+    transform: scale(1.05);
+    background: #cc0000;
+}
+
+.text-content {
+    line-height: 1.8;
+    color: var(--text-main);
+    white-space: pre-wrap;
+}
+
+.text-content h1,
+.text-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.text-content code {
+    background: #f1f5f9;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.lesson-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.task-card,
+.quiz-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+}
+
+.task-card h4,
+.quiz-card h4 {
+    margin-bottom: 0.5rem;
+}
+
+.task-card p,
+.quiz-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.btn-complete {
+    width: 100%;
+    background: #10b981;
+    color: white;
+    padding: 0.75rem;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+}
+
+.btn-quiz {
+    width: 100%;
+    background: var(--primary);
+    color: white;
+    padding: 0.75rem;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+}

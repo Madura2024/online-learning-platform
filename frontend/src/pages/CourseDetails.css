@@ -1,0 +1,156 @@
+.course-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.course-banner {
+    display: flex;
+    gap: 3rem;
+    padding: 4rem;
+    border-radius: var(--radius-lg);
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.banner-content {
+    flex: 2;
+}
+
+.banner-image {
+    flex: 1;
+}
+
+.placeholder-large {
+    font-size: 8rem;
+    text-align: center;
+}
+
+.badge {
+    background: var(--primary);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.course-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.banner-stats {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0 2rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.btn-enroll-now {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.enrolled-status {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.enrolled-msg {
+    color: #10b981;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.btn-go-dash {
+    background: #f1f5f9;
+    color: var(--text-main);
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    width: fit-content;
+}
+
+.course-tabs {
+    background: white;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.tabs-header {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+}
+
+.tabs-header button {
+    padding: 1.5rem 3rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.tabs-header button.active {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
+
+.tab-content {
+    padding: 3rem;
+}
+
+.module-item {
+    margin-bottom: 2rem;
+}
+
+.module-header {
+    background: #f8fafc;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 1rem;
+}
+
+.lesson-row {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.lesson-icon {
+    margin-right: 1.5rem;
+}
+
+.lesson-name {
+    flex: 1;
+    font-weight: 500;
+}
+
+.btn-view-lesson {
+    background: #f1f5f9;
+    padding: 0.4rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.btn-view-lesson:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.no-content {
+    color: var(--text-muted);
+    font-style: italic;
+}
